@@ -1,0 +1,278 @@
+// Este documento foi criado para guiar qualquer pessoa a alterar alguns conteúdos presentes no site da Otimiza Consultoria Jr. //
+
+ATENÇÃO: ao editar códigos, evitar apagar tags. Tags são todas as palavras ou códigos dentro de setinhas <> Escreva aqui.. </>. Sendo a primeira sem / para sinalizar que está abrindo o comentário e sendo a segunda com / para sinalizar que está fechando o comentário, escreva entre ambos.
+
+SUMÁRIO
+
+0. Acesso ao site
+1. Página Inicial (index.html)
+	1.1. Depoimentos
+	1.2. Blog
+	1.3. Nossos parceiros
+2. Cases (cases.html)
+	2.1. Case 1 (case-1.html)
+		....
+3. Materiais (books.html)
+	3.1. Material 1 (book-1.html)
+		.....
+
+====================================================
+
+0. ACESSO AO SITE
+
+	01. Acesse o link www.financeiro.hostgator.com.br
+	02. Entre com o usuário e senha atuais
+	03. Clique no botão chamado "CPANEL"
+	04. Clica no botão chamado "GERENCIADOR DE ARQUIVOS"
+	05. Dentro do painel, role o scroll do mouse e procure pela pasta "PUBLIC_HTML" e dê apenas um click
+	06. Você encontrará todos os arquivos que fazem parte do site
+
+
+
+1. PÁGINA INICIAL (index.html)
+	
+	01. Procure na pasta "PUBLIC_HTML" pelo arquivo chamado "INDEX.HTML"
+	02. Clique com o botão direito e clique em "CODE EDIT" 
+	03. Ao clicar aparecerá uma mensagem (ou não), mas é só clicar em "EDIT" novamente. 
+	04. Você será encaminhado para o código oficial do site. 
+
+
+
+1.1 DEPOIMENTOS
+
+	01. Seguido os passos do tópico 1, clique em "CTRL + F" para pesquisar e digite a palavra "DEPOIMENTOS" ou "TESTIMONIALS AREA START" e dê enter.
+
+	INFORMAÇÃO ADICIONAL 
+=== Você será direcionado à aba de depoimentos, as palavras que tiverem a seguinte simbologia <!--== TEXTO ==--> essas são chaves usadas para realizar um comentário dentro de um código sem que cause alteração na estrutura do site, como se fosse uma anotação invisível. Os códigos possuem isso para achar com mais facilidade cada seção do site. ====
+
+PARA CRIAR NOVO DEPOIMENTO 
+
+	02. O código abaixo foi extraido do site, para criar um novo apenas copie o texto a partir de "INÍCIO DO BLOCO DE DEPOIMENTO 1" até o "FINAL DO BLOCO DE DEPOIMENTO 1" e cole logo abaixo do último bloco comentado (não esqueça de trocar a numeração é importante identificar os blocos 1,2,3..)
+
+<!--== INÍCIO DO BLOCO DE DEPOIMENTO 1 ==-->
+   <div class="single-testimonial">
+          <p>Foi um trabalho que veio a agregar no que tange a processos, a otimizar tempo e recursos. Outro fator que foi extremamente importante foi a questão de indicadores, isso uma vez implantada na gestão possibilita que se consiga balizar as melhoras, saindo da conjectura do achometro.</p>
+    <h3>Vitor - Diretor Comercial da Total Materiais de Construção</h3>
+   <div class="client-logo">
+   <img src="assets/img/client/client-pic-1.png" alt="JSOFT">
+  </div>
+ </div>
+ <!--== FINAL DO BLOCO DE DEPOIMENTO 1 ==-->
+
+	03. Para trocar o descritivo do comentário apenas troque o texto já existente por outro, mantendo o texto dentro das setas <p>   </p>.
+	04. Para trocar o nome do autor do comentários apenas troque o texto já existente por outro, mantendo o texto dentro das setas <h3>  </h3>.
+	05. Para trocar a imagem, precisa-se inserir a foto na pasta correta. Volte ao "PUBLIC_HTML", clique na pasta "ASSETS" depois na pasta "IMG" depois na pasta "CLIENT" e por fim, clique no canto superior esquerdo em "UPLOAD OU DOWNLOAD" para lançar a foto que deseja nessa pasta.
+	06. Para fazer a foto aparecer no site, volte ao arquivo no início do "PUBLIC HTML", siga os passos do tópico 1 novamente e procure pelo texto 
+<img src="assets/img/client/client-pic-1.png" alt="JSOFT">. Este código mostra o caminho que você fez clicanod nas pastas, a última palavra desse caminho sinaliza o nome que colocaste para a foto. Para alterar apenas copie o MESMO nome que a foto e coloque a sua extensão JPG, PNG, JPEG, por exemplo, <img src="assets/img/client/NOVAFOTOAQUI.jpg" alt="JSOFT">
+	07. Tudo pronto para funcionar, não esqueça de salvar e checar se ficou como esperado. Caso a imagem fique muito grande, baixe uma das imagens já postadas na mesma pasta que fez o upload da nova, verifique qual o tamanho da foto e redimensione a foto nova para caber como as outras. 
+
+
+
+1.2 BLOG
+
+	1. O código abaixo foi extraido do site, para criar um novo apenas copie o texto a partir de "INÍCIO DA POSTAGEM 1 - IMAGEM A ESQUERDA" (CASO QUEIRA O CÓDIGO COM A IMAGEM PARA DIREITA, PROCURE O CORRETO) até o " FINAL DA POSTAGEM 1" e cole logo abaixo do último bloco comentado (não esqueça de trocar a numeração é importante identificar os blocos 1,2,3..)
+
+	<!-- INÍCIO DA POSTAGEM 1 - IMAGEM A ESQUERDA -->
+                <div class="col-lg-12">
+                    <article class="single-article">
+                        <div class="row">
+                            <!-- Articles Thumbnail Start -->
+                            <div class="col-lg-5">
+                                <div class="article-thumb">
+                                  <!--== ABAIXO ENCONTRA-SE A IMAGEM REFERENTE AO ARTIGO |PARA ALTERAR APENAS TROCA assets/img/article/NOVONOME.PNG ==-->
+                                    <img src="assets/img/article/arti-thumb-1.jpg" alt="JSOFT">
+                                </div>
+                            </div>
+                            <!-- Articles Thumbnail End -->
+
+                            <!-- Articles Content Start -->
+                            <div class="col-lg-7">
+                                <div class="display-table">
+                                    <div class="display-table-cell">
+                                        <div class="article-body">
+                                        <!--== ABAIXO ENCONTRA-SE O TÍTULO DA POSTAGEM ==-->
+                                            <h3><a href="article-details.html">Sua empresa está operando no vermelho?</a></h3>
+                                            <div class="article-meta">
+                                            <!--== ABAIXO ENCONTRA-SE O AUTOR DA POSTAGEM ==-->
+                                                <a href="#" class="author">Por :: <span>Admin</span></a>                                         
+                                            </div>
+						<!--== ABAIXO ENCONTRA-SE A DATA DE CRIAÇÃO DA POSTAGEM ==-->
+                                            <div class="article-date">25 <span class="month">jan</span></div>
+                                            
+						<!--== ABAIXO ENCONTRA-SE O TEXTO DE APRESENTAÇÃO DA POSTAGEM ==-->
+                                            <p>Wlam aiber vestibulum fringilla oremedad ipsum dolor sit amet consectetur adipisicing elit sed doned eiusmod tempored incididunt ut labore et dolore magna aliquaa enimd ad minim veniad.</p>
+						<!--== ABAIXO ENCONTRA-SE O LINK DA POSTAGEM | PARA ALTERAR APENAS COPIE A URL REFERENTE A PAGINA DO BLOG DENTRO DO HREF"LINK" ==-->
+                                             <a href="https://otimizajr.com.br/blog/plano-de-marketing-para-o-mercado-pet/" class="readmore-btn">Leia Mais <i class="fa fa-long-arrow-right"></i></a></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Articles Content End -->
+                        </div>
+                    </article>
+                </div>
+                <!-- FINAL DA POSTAGEM 1-->
+
+	02. Seguido os passos do tópico 1, clique em "CTRL + F" para pesquisar e digite a palavra "BLOG" ou "Articles Content Wrap Start" e dê enter.
+	03. Para trocar a imagem, precisa-se inserir a foto na pasta correta. Volte ao "PUBLIC_HTML", clique na pasta "ASSETS" depois na pasta "IMG" depois na pasta "ARTICLE" e por fim, clique no canto superior esquerdo em "UPLOAD OU DOWNLOAD" para lançar a foto que deseja nessa pasta.
+	04. Para fazer a foto aparecer no site, volte ao arquivo no início do "PUBLIC HTML", siga os passos do tópico 1 novamente e procure pelo texto 
+<img src="assets/img/article/arti-thumb-1.jpg" alt="JSOFT">. Este código mostra o caminho que você fez clicando nas pastas, a última palavra desse caminho sinaliza o nome que colocaste para a foto. Para alterar apenas copie o MESMO nome que a foto e coloque a sua extensão JPG, PNG, JPEG, por exemplo, <img src="assets/img/article/NOVAFOTO.png" alt="JSOFT"> 
+	05. Para alterar o título da postagem apenas troque o texto já existente por outro, mantendo o texto dentro das setas <h3><a href="article-details.html"> NOVO TÍTULO </a></h3>
+	06. Para alterar o comentário da postagem apenas troque o texto já existente por outro, mantendo o texto dentro das setas <p>  </p>
+
+
+
+
+1.3 PARCEIROS
+
+	01. O código abaixo foi extraido do site, para criar um novo apenas copie o texto a partir de "INÍCIO DO BLOCO DO PARCEIRO 1" até o "FINAL DO BLOCO DO PARCEIRO 1" e cole logo abaixo do último bloco comentado (não esqueça de trocar a numeração é importante identificar os blocos 1,2,3..)
+
+<!--== Partner Area Start ==-->
+    <div id="partner-area">
+        <h6>NOSSOS PARCEIROS</h6>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+          
+<!-- PARA ADICIONAR MAIS PARCEIROS, APENAS COPIE O CÓDIGO REFERENTE A CADA BLOCO E COLE ABAIXO DO ÚLTIMO - NÃO SE ESQUEÇA DE AJUSTAR O TAMANHO DA FOTO ANTES DE INSERIR AQUI :) -->
+              <div class="partner-content-wrap">
+
+                  <!-- INÍCIO DO BLOCO DO PARCEIRO 1 -->
+                  <div class="single-partner">
+                      <div class="display-table">
+                          <div class="display-table-cell">
+                           <!-- ABAIXO ENCONTRA-SE O LOCAL PARA ALTERAR A FOTO, APENAS TROQUE assets/img/partner/NOVONOME.PNG -->
+                              <img src="assets/img/partner/partner-logo-1.png" alt="JSOFT">
+                          </div>
+                      </div>
+                  </div>
+                  <!-- FINAL DO BLOCO DO PARCEIRO 1 -->
+
+                  <!-- INÍCIO DO BLOCO DO PARCEIRO 2 -->
+                  <div class="single-partner">
+                      <div class="display-table">
+                          <div class="display-table-cell">
+                          <!-- ABAIXO ENCONTRA-SE O LOCAL PARA ALTERAR A FOTO, APENAS TROQUE assets/img/partner/NOVONOME.PNG -->
+                              <img src="assets/img/partner/partner-logo-2.png" alt="JSOFT">
+                          </div>
+                      </div>
+                  </div>
+                  <!-- FINAL DO BLOCO DO PARCEIRO 2 -->
+
+                  <!-- INÍCIO DO BLOCO DO PARCEIRO 3 -->
+                  <div class="single-partner">
+                      <div class="display-table">
+                          <div class="display-table-cell">
+                          <!-- ABAIXO ENCONTRA-SE O LOCAL PARA ALTERAR A FOTO, APENAS TROQUE assets/img/partner/NOVONOME.PNG -->
+                              <img src="assets/img/partner/partner-logo-3.png" alt="JSOFT">
+                          </div>
+                      </div>
+                  </div>
+                  <!-- FINAL DO BLOCO DO PARCEIRO 3 -->
+
+                  <!-- INÍCIO DO BLOCO DO PARCEIRO 4 -->
+                  <div class="single-partner">
+                      <div class="display-table">
+                          <div class="display-table-cell">
+                          <!-- ABAIXO ENCONTRA-SE O LOCAL PARA ALTERAR A FOTO, APENAS TROQUE assets/img/partner/NOVONOME.PNG -->
+                              <img src="assets/img/partner/partner-logo-4.png" alt="JSOFT">
+                          </div>
+                      </div>
+                  </div>
+                  <!-- FINAL DO BLOCO DO PARCEIRO 4 -->
+
+                  <!-- INÍCIO DO BLOCO DO PARCEIRO 5 -->
+                  <div class="single-partner">
+                      <div class="display-table">
+                          <div class="display-table-cell">
+                          <!-- ABAIXO ENCONTRA-SE O LOCAL PARA ALTERAR A FOTO, APENAS TROQUE assets/img/partner/NOVONOME.PNG -->
+                              <img src="assets/img/partner/partner-logo-5.png" alt="JSOFT">
+                          </div>
+                      </div>
+                  </div>
+                  <!-- FINAL DO BLOCO DO PARCEIRO 4  -->
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--== Partner Area End ==-->
+
+	02. Seguido os passos do tópico 1, clique em "CTRL + F" para pesquisar e digite a palavra "NOSSOS PARCEIROS" ou "Partner Area Start" e dê enter.
+	03. Para trocar a imagem, precisa-se inserir a foto na pasta correta. Volte ao "PUBLIC_HTML", clique na pasta "ASSETS" depois na pasta "IMG" depois na pasta "PARTNER" e por fim, clique no canto superior esquerdo em "UPLOAD OU DOWNLOAD" para lançar a foto que deseja nessa pasta.
+	04. Para fazer a foto aparecer no site, volte ao arquivo no início do "PUBLIC HTML", siga os passos do tópico 1 novamente e procure pelo texto 
+<img src="assets/img/partner/partner-logo-1.png" alt="JSOFT">. Este código mostra o caminho que você fez clicando nas pastas, a última palavra desse caminho sinaliza o nome que colocaste para a foto. Para alterar apenas copie o MESMO nome que a foto e coloque a sua extensão JPG, PNG, JPEG, por exemplo, <img src="assets/img/partner/NOVAFOTO.png" alt="JSOFT">
+	05. Tudo pronto para funcionar, não esqueça de salvar e checar se ficou como esperado. Caso a imagem fique muito grande, baixe uma das imagens já postadas na mesma pasta que fez o upload da nova, verifique qual o tamanho da foto e redimensione a foto nova para caber como as outras.
+
+
+2. CASES (cases.html)
+
+	01. Procure na pasta "PUBLIC_HTML" pelo arquivo chamado "CASES.HTML"
+	02. Clique com o botão direito e clique em "CODE EDIT" 
+	03. Ao clicar aparecerá uma mensagem (ou não), mas é só clicar em "EDIT" novamente. 
+	04. Você será encaminhado para o código oficial do site.
+	05. Seguido os passos acima, clique em "CTRL + F" para pesquisar e digite a palavra "What We Do Area Start" e dê enter.
+	06. Para criar um novo case apenas copie o texto a partir de "INÍCIO DO BLOCO CASE 1" até o "FINAL DO BLOCO CASE 1" e cole logo abaixo do último bloco comentado (não esqueça de trocar a numeração é importante identificar os blocos 1,2,3..)
+	07. Para alterar o título da postagem apenas troque o texto já existente por outro, mantendo o texto dentro das setas <h3> NOVO TÍTULO </h3>
+	08. Para alterar o comentário da postagem apenas troque o texto já existente por outro, mantendo o texto dentro das setas <p>  </p>
+	09. Para alterar a página para onde vai o conteúdo da postagem apenas troque a referência já existente no href="404.html", para <a href="case-1.html">Leia mais</a>. Não esqueça de ir alterando as páginas de acordo a sequência dos arquivos, exemplo, Case 1 = cases-single-1.html, Case 2 = case-2.html, Case 3 = case-3.html....
+	10. Para trocar a imagem, precisa-se inserir a foto na pasta correta. Volte ao "PUBLIC_HTML", clique na pasta "ASSETS" depois na pasta "IMG" depois na pasta "WE-DO" e por fim, clique no canto superior esquerdo em "UPLOAD OU DOWNLOAD" para lançar a foto que deseja nessa pasta.
+	11. Para fazer a foto aparecer no site, volte ao arquivo no início do "PUBLIC HTML", clique no arquivo "STYLE.CSS" com botão direito, clique em "CODE EDIT", clique em "CTRL + F" para pesquisar e digite a palavra "What Do Area CSS"
+	12. O código abaixo representa o que vamos modificar, fique atento:
+		.we-do-bg-1/2/3 {
+			background-image: url(assets/img/we-do/service1-img.png);
+		}
+	13. Este código mostra o caminho que você fez clicando nas pastas, a última palavra desse caminho sinaliza o nome que colocaste para a foto. Para alterar apenas copie o MESMO nome que a foto e coloque a sua extensão JPG, PNG, JPEG, por exemplo, url(assets/img/we-do/NOVAFOTO.jpg).
+
+
+
+2.1. CASE 1 (case-1.html)
+	
+	01. Procure na pasta "PUBLIC_HTML" pelo arquivo chamado "CASE-1.HTML"
+	02. Clique com o botão direito e clique em "CODE EDIT" 
+	03. Ao clicar aparecerá uma mensagem (ou não), mas é só clicar em "EDIT" novamente. 
+	04. Você será encaminhado para o código oficial do site.
+	05. Seguido os passos acima, clique em "CTRL + F" para pesquisar e digite a palavra "Car List Area Start" e dê enter.
+	07. Para alterar o título da postagem apenas troque o texto já existente por outro, mantendo o texto dentro das setas <h2>INSERT TITLE HERE</h2> 
+	08. Para alterar o comentário da postagem apenas troque o texto já existente por outro, mantendo o texto dentro das setas <p>  </p>
+	09. Para separar cada texto em parágrafos, copie separadamente cada parágrafo cada um dentro da tag <p> PARAGRÁFO 1 </p> <p> PARAGRÁFO 2 </p>
+
+
+
+3. MATERIAIS (books.html)
+
+	01. Procure na pasta "PUBLIC_HTML" pelo arquivo chamado "BOOKS.HTML"
+	02. Clique com o botão direito e clique em "CODE EDIT" 
+	03. Ao clicar aparecerá uma mensagem (ou não), mas é só clicar em "EDIT" novamente. 
+	04. Você será encaminhado para o código oficial do site.
+	05. Seguido os passos acima, clique em "CTRL + F" para pesquisar e digite a palavra "What We Do Area Start" e dê enter.
+	06. Para criar uma nova caixinha do ebook apenas copie o texto a partir de "INÍCIO DO BLOCO 1" até o "FINAL DO BLOCO 1" e cole logo abaixo do último bloco comentado (não esqueça de trocar a numeração é importante identificar os blocos 1,2,3..)
+	07. Para alterar a página para onde vai o conteúdo da postagem apenas troque a referência já existente no href="#", para <a href="book-5.html">. Não esqueça de ir alterando as páginas de acordo a sequência dos arquivos, exemplo, BOOK 1 = book-1.html, BOOK 2 = book-2.html...
+	08. Para trocar a imagem, precisa-se inserir a foto na pasta correta. Volte ao "PUBLIC_HTML", clique na pasta "ASSETS" depois na pasta "IMG" depois na pasta "BOOKS" e por fim, clique no canto superior esquerdo em "UPLOAD OU DOWNLOAD" para lançar a foto que deseja nessa pasta.
+	09. Para fazer a foto aparecer no site, vá até o código logo abaixo de onde estávamos no passo 7, você encontrará o seguinte código <img src="assets/img/books/3.png" alt="JSOFT">. Este código mostra o caminho que você fez clicando nas pastas, a última palavra desse caminho sinaliza o nome que colocaste para a foto. Para alterar apenas copie o MESMO nome que a foto e coloque a sua extensão JPG, PNG, JPEG, por exemplo, <img src="assets/img/books/NOVAFOTO.png" alt="JSOFT">.
+
+
+
+3.1 MATERIAL 1 (book-1.html)
+	
+	01. Procure na pasta "PUBLIC_HTML" pelo arquivo chamado "BOOK-1.HTML"
+	02. Clique com o botão direito e clique em "CODE EDIT" 
+	03. Ao clicar aparecerá uma mensagem (ou não), mas é só clicar em "EDIT" novamente. 
+	04. Você será encaminhado para o código oficial do site.
+	05. Seguido os passos acima, clique em "CTRL + F" para pesquisar e digite a palavra "404 Page Page Content Start" e dê enter.
+	06. Para alterar o título da postagem apenas troque o texto já existente por outro, mantendo o texto dentro das setas <h1>INSERT TITLE HERE</h1> 
+	07. Para alterar o comentário da postagem apenas troque o texto já existente por outro, mantendo o texto dentro das setas <p>  </p>
+	08. Para pular linha apenas adicione um <br> ao final da frase anterior para que a frase seguinte seja alocada abaixo. Exemplo:
+		<p> 1 em cada 2 pessoas tem Pets no Brasil;<br>
+                    52% compram Pets quando se casam e 41,8% quando se divorciam;<br>
+                    45% são casais sem filhos;<br>
+		</p>
+	09. Para separar cada texto em parágrafos, copie separadamente cada parágrafo cada um dentro da tag <p> PARAGRÁFO 1 </p> <p> PARAGRÁFO 2 </p>
+	10. Para trocar a imagem, precisa-se inserir a foto na pasta correta. Volte ao "PUBLIC_HTML", clique na pasta "ASSETS" depois na pasta "IMG" depois na pasta "BOOKS" e por fim, clique no canto superior esquerdo em "UPLOAD OU DOWNLOAD" para lançar a foto que deseja nessa pasta.
+			///////// É INDICADO UTILIZAR A MESMA SEQUÊNCIA DE NOME PARA FOTO PARA NÃO CONFUNDIR, 
+				  A PALAVRA "BORRADO" SIGNIFICA AS IMAGENS DOS BOOKS QUE FICAM FOSCAS 			
+				  EM CADA PÁGINA DO FORMULÁRIO DE PREENCHIMENTO //////////////////
+	11. Para fazer a foto aparecer no site, volte ao código do site atráves do passo 1, você encontrará o seguinte código <img src="assets/img/books/1-borrado.png" alt="JSOFT"> . Este código mostra o caminho que você fez clicando nas pastas, a última palavra desse caminho sinaliza o nome que colocaste para a foto. Para alterar apenas copie o MESMO nome que a foto e coloque a sua extensão JPG, PNG, JPEG, por exemplo, <img src="assets/img/books/NOVAFOTO.png" alt="JSOFT">.
+	12. Para trocar o arquivo em PDF de cada ebook, precisa-se inserir o PDF na pasta correta. Volte ao "PUBLIC_HTML", clique na pasta "ASSETS" depois na pasta "PHP" depois na pasta "PDFS" e por fim, clique no canto superior esquerdo em "UPLOAD OU DOWNLOAD" para lançar o PDF que deseja nessa pasta. Siga a sequência de numeração para fácil acesso dos demais, exemplo, o arquivo em PDF chamado 1 = book-1.html, 2 = book-2.html.
+	13. Para alterar os materiais para download de cada página em específico, volte ao código do site através do passo 1, você encontrará o seguinte código logo após o local de colocar título e descrição <form action="assets/php/form-book1.php?arquivo=pdfs/1.pdf" method="POST" class="form-box">. Este código mostra o caminho que você fez clicando nas pastas, a última palavra desse caminho sinaliza o nome que colocaste para o arquivo. Para alterar apenas copie o MESMO nome que o arquivo e coloque a sua extensão .PDF, por exemplo, "assets/php/form-book1.php?arquivo=pdfs/NOVOARQUIVO.pdf".
+			///////////OS PASSOS ACIMA SERVEM PARA SER UTILIZADO EM QUALQUER MATERIAL QUE DESEJA INSERIR////////////
